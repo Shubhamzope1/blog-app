@@ -12,7 +12,7 @@ class profs extends React.Component {
     }
     componentDidMount() {
         axios({
-            url: 'http://localhost:2023/profs',
+            url: 'https://blog-appbackend.herokuapp.com/profs',
             method: 'GET',
             headers: { 'Content-Type': 'application/json' }
         })

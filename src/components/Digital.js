@@ -13,7 +13,7 @@ class Digital extends React.Component {
     componentDidMount() {
         sessionStorage.clear();
         axios({
-            url: 'http://localhost:2023/Digital',
+            url: 'https://blog-appbackend.herokuapp.com/Digital',
             method: 'GET',
             headers: { 'Content-Type': 'application/json' }
         })
@@ -35,7 +35,6 @@ class Digital extends React.Component {
                         return <div>
                             <h4 id="h4" class="container text-light">Topic-{item.name} </h4>
                             <p id="P" class="container text-light">{item.content}
-                                <h5>THANK YOU</h5>
                             </p>
                         </div>
 

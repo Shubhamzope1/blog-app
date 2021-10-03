@@ -23,7 +23,7 @@ class Report extends React.Component {
         message:message,
     };
        axios({
-        url:'http://localhost:2023/feeds',
+        url:'https://blog-appbackend.herokuapp.com/feeds',
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         data: repObj
