@@ -8,7 +8,7 @@ class Footer extends React.Component {
   render() {
     return (
       <div >
-        <footer id="foot" class=" container-fluid footer bg-dark  text-white">
+        <footer id="foot" className=" container-fluid footer bg-dark  text-white">
           <div className="row">
             <div className="col-6 col-lg-4 high" >
               <h3>Nav</h3>
@@ -52,7 +52,7 @@ class Footer extends React.Component {
                 </div>
                 <div className="flyer">
                   <a href="https://www.instagram.com/shubhamzope1" target="_blank">
-                    <i class="fab fa-instagram fontawesome-style text-white start"></i>
+                    <i className="fab fa-instagram fontawesome-style text-white start"></i>
                   </a>
                 </div>
 

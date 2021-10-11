@@ -13,7 +13,7 @@ class Digital extends React.Component {
     componentDidMount() {
         sessionStorage.clear();
         axios({
-            url: 'https://blog-appbackend.herokuapp.com/Digital',
+            url: 'https://rocky-cliffs-40299.herokuapp.com/Digital',
             method: 'GET',
             headers: { 'Content-Type': 'application/json' }
         })
@@ -28,13 +28,13 @@ class Digital extends React.Component {
         const { Digital } = this.state;
         return (
             <div>
-                <div id="digco" class="container text-light">
-                    <h1 id="digital" class="h1 text-light">Digital</h1>
+                <div id="digco" className="container text-light">
+                    <h1 id="digital" className="h1 text-light">Digital</h1>
                     <br />
                     {Digital.map((item) => {
-                        return <div>
-                            <h4 id="h4" class="container text-light">Topic-{item.name} </h4>
-                            <p id="P" class="container text-light">{item.content}
+                        return <div className="whitespace">
+                            <h4 id="h4" className="container text-light">Topic-{item.name} </h4>
+                            <p id="P" className="container text-light">{item.content}
                             </p>
                         </div>
 

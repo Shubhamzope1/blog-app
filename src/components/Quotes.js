@@ -10,7 +10,7 @@ class Quotes extends React.Component {
     }
     componentDidMount() {
         axios({
-            url: 'https://blog-appbackend.herokuapp.com/Quotes',
+            url: 'https://rocky-cliffs-40299.herokuapp.com/Quotes',
             method: 'GET',
             headers: { 'Content-Type': 'application/json' }
         })
@@ -25,14 +25,14 @@ class Quotes extends React.Component {
         const { Quotes } = this.state;
         return (
             <div>
-                <div id="heading" class="container justify-content-center text-light">
-                    <h1 id="h1" class="h1">Quote Of The Day</h1>
-                    <h3 id="h3" class="h3 justify-content-center">Keep Yourself Motivated to learn new things</h3>
+                <div id="heading" className="container justify-content-center text-light">
+                    <h1 id="h1" className="h1">Quote Of The Day</h1>
+                    <h3 id="h3" className="h3 justify-content-center">Keep Yourself Motivated to learn new things</h3>
                 </div>
                 <div>
-                    <section class="container">
-                        <div id="daily" class="container text-light" >
-                            <h1 class="h1 text-light">Quote</h1>
+                    <section className="container">
+                        <div id="daily" className="container text-light" >
+                            <h1 className="h1 text-light">Quote</h1>
                             <br />
                             <div>
                                 <div>
@@ -46,7 +46,7 @@ class Quotes extends React.Component {
                                             <div className="row">
                                             {Quotes && item.thumb && item.thumb.map((image) => {
                                                      
-                                                        return <div class="col-lg-4 col-md-6 col-sm-12 g-0 box">
+                                                        return <div className="col-lg-4 col-md-6 col-sm-12 g-0 box">
                                                             <img src={image} className="l_img" alt="Sorry for the Inconvinience" />
                                                         </div>
                                                     

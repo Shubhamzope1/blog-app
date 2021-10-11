@@ -12,7 +12,7 @@ class profs extends React.Component {
     }
     componentDidMount() {
         axios({
-            url: 'https://blog-appbackend.herokuapp.com/profs',
+            url: 'https://rocky-cliffs-40299.herokuapp.com/profs',
             method: 'GET',
             headers: { 'Content-Type': 'application/json' }
         })
@@ -28,11 +28,11 @@ class profs extends React.Component {
         return (
             <div>
 
-                <div id="pro" class="container text-light">
+                <div id="pro" className="container text-light">
                     {profs.map((item) => {
-                        return <div>
-                            <h1 class="h1 text-light">professional</h1><br />
-                            <h4 class="container text-light">Topic:- {item.name}</h4><br />
+                        return <div className="whitespace">
+                            <h1 className="h1 text-light">professional</h1><br />
+                            <h4 className="container text-light">Topic:- {item.name}</h4><br />
                             <div>{item.content}</div>
                         </div>
 

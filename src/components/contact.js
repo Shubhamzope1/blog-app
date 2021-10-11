@@ -21,7 +21,7 @@ class Contact extends React.Component {
         message:message,
     };
        axios({
-        url:'https://blog-appbackend.herokuapp.com/contact',
+        url:'https://rocky-cliffs-40299.herokuapp.com/contact',
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         data: repObj
